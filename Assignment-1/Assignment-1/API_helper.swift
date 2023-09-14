@@ -25,7 +25,7 @@ class DogAPI_Helper {
 }
 
 class DogFactsAPI_Helper {
-    static private let baseURL_String = "https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/?number=3"
+    static private let baseURL_String = "https://dogapi.dog/api-docs/v2/swagger.json"
     
     static public func fetch() async throws -> Any {
             return try await fetchAPI(urlString: baseURL_String)

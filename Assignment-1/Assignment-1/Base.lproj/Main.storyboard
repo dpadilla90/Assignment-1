@@ -17,19 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vib-vb-VhV">
-                                <rect key="frame" x="166" y="200" width="61.333333333333343" height="35"/>
+                                <rect key="frame" x="156.33333333333334" y="200" width="80.333333333333343" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="API 1"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cat API"/>
+                                <connections>
+                                    <action selector="callCatApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdf-MC-XMO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy7-Xg-Aee">
-                                <rect key="frame" x="164.66666666666666" y="382" width="64" height="35"/>
+                                <rect key="frame" x="154" y="382" width="85.333333333333314" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="API 2"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dog API"/>
+                                <connections>
+                                    <action selector="callDogApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ma7-PJ-T43"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNq-UH-u9s">
-                                <rect key="frame" x="164.33333333333334" y="564" width="64.333333333333343" height="35"/>
+                                <rect key="frame" x="131.33333333333337" y="564" width="130.66666666666663" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="API 3"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dog Facts API"/>
+                                <connections>
+                                    <action selector="callDogFactsApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGY-GI-l7v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +53,11 @@
                             <constraint firstItem="UNq-UH-u9s" firstAttribute="top" secondItem="Xy7-Xg-Aee" secondAttribute="bottom" constant="147" id="phD-9a-qf5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="callCatAPIButton" destination="Vib-vb-VhV" id="cA5-z1-KCn"/>
+                        <outlet property="callDogAPIButton" destination="Xy7-Xg-Aee" id="ELx-sW-Anj"/>
+                        <outlet property="callDogFactsAPIButton" destination="UNq-UH-u9s" id="gJH-eW-RO0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,3 +8,60 @@
 
 
 import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var callCatAPIButton: UIButton!
+    @IBOutlet weak var callDogAPIButton: UIButton!
+    @IBOutlet weak var callDogFactsAPIButton: UIButton!
+    
+    @IBAction func callCatApi(_ sender: Any) {
+        Task {
+              do {
+                  await print(try CatAPI_Helper.fetch())
+              } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
+                  print("Please insert a correct URL")
+              } catch API_Errors.CANNOT_PARSE_DATA_INTO_JSON {
+                  print("Failed to parse JSON data")
+              } catch let err {
+                  print(err)
+              }
+          }
+    }
+
+    @IBAction func callDogApi(_ sender: Any) {
+        Task {
+              do {
+                  await print(try DogAPI_Helper.fetch())
+              } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
+                  print("Please insert a correct URL")
+              } catch API_Errors.CANNOT_PARSE_DATA_INTO_JSON {
+                  print("Failed to parse JSON data")
+              } catch let err {
+                  print(err)
+              }
+          }
+    }
+
+    @IBAction func callDogFactsApi(_ sender: Any) {
+        Task {
+              do {
+                  await print(try DogFactsAPI_Helper.fetch())
+              } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
+                  print("Please insert a correct URL")
+              } catch API_Errors.CANNOT_PARSE_DATA_INTO_JSON {
+                  print("Failed to parse JSON data")
+              } catch let err {
+                  print(err)
+              }
+          }
+    }
+
+
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Additional setup after loading the view.
+    }
+}
