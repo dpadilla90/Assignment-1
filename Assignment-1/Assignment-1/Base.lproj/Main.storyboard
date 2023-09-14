@@ -55,7 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="callCatAPIButton" destination="Vib-vb-VhV" id="cA5-z1-KCn"/>
-                        <outlet property="callDogAPIButton" destination="Xy7-Xg-Aee" id="ELx-sW-Anj"/>
+                        <outlet property="callCoffeeAPIButton" destination="Xy7-Xg-Aee" id="DXe-K5-eG2"/>
                         <outlet property="callDogFactsAPIButton" destination="UNq-UH-u9s" id="gJH-eW-RO0"/>
                     </connections>
                 </viewController>

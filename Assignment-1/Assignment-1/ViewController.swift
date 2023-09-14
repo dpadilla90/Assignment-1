@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var callCatAPIButton: UIButton!
-    @IBOutlet weak var callDogAPIButton: UIButton!
+    @IBOutlet weak var callCoffeeAPIButton: UIButton!
     @IBOutlet weak var callDogFactsAPIButton: UIButton!
     
     @IBAction func callCatApi(_ sender: Any) {
