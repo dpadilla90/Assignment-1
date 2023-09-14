@@ -29,10 +29,10 @@ class ViewController: UIViewController {
           }
     }
 
-    @IBAction func callDogApi(_ sender: Any) {
+    @IBAction func callCoffeeApi(_ sender: Any) {
         Task {
               do {
-                  await print(try DogAPI_Helper.fetch())
+                  await print(try CoffeeAPI_Helper.fetch())
               } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
                   print("Please insert a correct URL")
               } catch API_Errors.CANNOT_PARSE_DATA_INTO_JSON {

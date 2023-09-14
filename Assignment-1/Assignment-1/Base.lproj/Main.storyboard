@@ -25,11 +25,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy7-Xg-Aee">
-                                <rect key="frame" x="154" y="382" width="85.333333333333314" height="35"/>
+                                <rect key="frame" x="144" y="382" width="105" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Dog API"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Coffee API"/>
                                 <connections>
-                                    <action selector="callDogApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ma7-PJ-T43"/>
+                                    <action selector="callCoffeeApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6v4-qk-xmq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNq-UH-u9s">

@@ -16,8 +16,8 @@ enum API_Errors: Error {
 
 // MARK: - Helper Classes for APIs
 
-class DogAPI_Helper {
-    static private let baseURL_String = "https://dog.ceo/api/breeds/image/random"
+class CoffeeAPI_Helper {
+    static private let baseURL_String = "https://coffee.alexflipnote.dev/random.json"
     
     static public func fetch() async throws -> Any {
             return try await fetchAPI(urlString: baseURL_String)
